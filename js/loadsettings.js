@@ -39,7 +39,7 @@ divsettings.style.zIndex = 5000
 divsettings.style.position = "absolute";
 divsettings.style.display = "block"
    
- divsettings.innerHTML =  "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<li><a href="{{ site.baseurl }}/index.html"><i class='fa fa-home'></i> Home</a></li>"
+ divsettings.innerHTML =  "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<li><a href='{{ site.baseurl }}/index.html'><i class='fa fa-home'></i> Home</a></li>"
  divsettings.innerHTML += "LANG 1 &nbsp;<select id='L1'> </select>"
  divsettings.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "
  divsettings.innerHTML += "LANG 2 &nbsp;<select id='L2'></select>"
