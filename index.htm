@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ <meta name="Description" content="Content: multilingual words game based in Tetris">
+<title>SINONIMOS</title>
+<link rel="icon" href="ico.png">
+<script src="js/initial.js" type="text/javascript"></script>
+<script src="js/botones.js" type="text/javascript"></script>
+<script src="listas/llenguas.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body bgcolor="#000000">
+
+<div id="cositas" style="position:absolute; float:right; width:119px; height:116px; z-index:2; top: 38px; display:none; left: 2px;"> 
+  <div id="copnext" title="0" style="position:absolute; font-size: 1em;  z-index:1; left: 0px; text-align: center;  color:grey; background-color: #333333; layer-background-color: #333333; border: 1px none #000000;">NEXT BLOCK</div>
+  <div id="cop1" class="cop" title="1"  ></div>
+  <div id="cop2" class="cop" title="2"  ></div>
+  <div id="cop3" class="cop" title="3"  ></div>
+ </div>
+ 
+<div id="c"  style="position:absolute;  width:355px; height:20px; z-index:1; left: 1px; top: 395px; color:white"></div>
+ 
+<div id="cbarra" align="center" style="position:absolute; display: block;  left: 0px; "> 
+  <button id="bplai" class="button"  onclick="javascript:fplay(this);" style="font-size: 200%;  width:60%; height:30%;  "><i class="fa fa-play" aria-hidden="true"></i>
+</button>
+<br>
+  <div id="conivel" class="lepo" ></div><br>
+ <div id="copuntos" class="lepo" ></div><br>
+  <br>
+ <div  id="colen1" class="le" ></div><br>
+ <hr style="border-width: 2px; color:LemonChiffon">
+ <div id="colen2" class="le" ></div><br><br>
+  <button id="bset" class="button" onclick="javascript:fsettings();" style="background-color: black;  width: 70%; height:20%;  " ><i style="font-size:24px" class="fa">&#xf085;</i></button>
+ </div>
+
+<div id="marco" class="inner"> 
+  <div id="bloke" style="position:absolute;  z-index:-10; top: -60px; "> 
+    <div id="p1" class="kaixa" title="2"  style=" z-index:0; ">p1</div>
+    <div id="p2" class="kaixa" title="1"  style=" z-index:1; ">p2</div>
+    <div id="p3" class="kaixa" title="0"  style=" z-index:2; ">p3</div>
+  </div>
+</div>
+
+<script>
+ var plai = false , pausa = 500 , puntos = 0 , nivel = 1 , npuntos = 299 , nveces = 1
+var nfilas = 16 ; var ncolumns = 7 ; var nwords = 30 ;  var lenguas  = [0,1]; var nlista = 1;
+var inter ; var myVar; var myVar2; var myVar3;
+var cadenaeraser = "" ; var listawords = []; var copylistawords = [];
+var rejilla = new Array(); var subrejilla = new Array() ;
+var removelist = new Array() ; var removelist2 = new Array() ;
+//var synth = window.speechSynthesis;
+
+ var mark = document.getElementById("marco"); var blok = document.getElementById("bloke");
+ var pa1 = document.getElementById("p1"); var pa2 = document.getElementById("p2"); var pa3 = document.getElementById("p3");
+ var co1 = document.getElementById("cop1"); var co2 = document.getElementById("cop2"); var co3 = document.getElementById("cop3");
+
+var altocaja = parseInt(window.innerWidth / 2.4)
+var altop = parseInt(altocaja / nfilas);
+altocaja = parseInt(altop * nfilas)
+var anchocaja = parseInt(window.innerWidth / (ncolumns + 2.1));
+
+</script>
+</body>
+</html>
