@@ -34,7 +34,13 @@ div.cop { font-size: 1em; text-align: center; color:pink; position: absolute; }
 
 i.fa-fw {color:white; font-size:500%; margin: 13% 11%; cursor: pointer; }
 
-div.le {position:absolute; width:100%; text-align:center; color:LemonChiffon; }
+div.le { position:absolute; width:100%; text-align:center; color:LemonChiffon; }
+
+#cbarra { display:auto; }
+ 
+ #colen1 { border-style: solid; box-sizing: border-box;  border-width: 1px 1px 0px 1px; 	border-color: rgb(190,160,160);	}
+
+ #colen2 {border-style: solid; box-sizing: border-box; border-width: 0px 1px 1px 1px; 	border-color: rgb(190,160,160);	}
 
 div.lepo {position:absolute; width:100%; text-align:center; color:white; }
   </style>
@@ -52,16 +58,16 @@ div.lepo {position:absolute; width:100%; text-align:center; color:white; }
 <div id="c"  style="position:absolute;  width:355px; height:20px; z-index:1; left: 1px; top: 395px; color:white"></div>
  
 <div id="cbarra" align="center" style="position:absolute; display: block;  left: 0px; "> 
+
   <button id="bplai" class="button"  onclick="javascript:fplay(this);" style="font-size: 200%;  width:60%; height:30%;  "><i class="fa fa-play" aria-hidden="true"></i>
-</button>
-<br>
+</button><br>
+
   <div id="conivel" class="lepo" ></div><br>
- <div id="copuntos" class="lepo" ></div><br>
-  <br>
- <div  id="colen1" class="le" ></div><br>
- <hr style="border-width: 2px; color:LemonChiffon">
- <div id="colen2" class="le" ></div><br><br>
+ <div id="copuntos" class="lepo" ></div><br><br>
+  <div  id="colen1" class="le" ></div> <br>
+  <div id="colen2" class="le" ></div><br><br>
   <button id="bset" class="button" onclick="javascript:fsettings();" style="background-color: black;  width: 70%; height:20%;  " ><i style="font-size:24px" class="fa">&#xf085;</i></button>
+
  </div>
 
 <div id="marco" class="inner"> 
@@ -73,22 +79,29 @@ div.lepo {position:absolute; width:100%; text-align:center; color:white; }
 </div>
 
 <script>
- var plai = false , pausa = 500 , puntos = 0 , nivel = 1 , npuntos = 299 , nveces = 1
-var nfilas = 16 ; var ncolumns = 7 ; var nwords = 30 ;  var lenguas  = [0,1]; var nlista = 1;
-var inter ; var myVar; var myVar2; var myVar3;
-var cadenaeraser = "" ; var listawords = []; var copylistawords = [];
-var rejilla = new Array(); var subrejilla = new Array() ;
-var removelist = new Array() ; var removelist2 = new Array() ;
+
+var plai = false , pausa = 500 , puntos = 0 , nivel = 1 , npuntos = 299 , nveces = 1
+var nfilas = 16 , ncolumns = 7 , nwords = 30 , lenguas  = [0,1] , nlista = 1;
+var inter , myVar , myVar2 , myVar3;
+
+var cadenaeraser = "" , listawords = [] , copylistawords = [];
+
+var rejilla = new Array() , subrejilla = new Array() ;
+
+var removelist = new Array() , removelist2 = new Array() ;
+
 //var synth = window.speechSynthesis;
 
- var mark = document.getElementById("marco"); var blok = document.getElementById("bloke");
- var pa1 = document.getElementById("p1"); var pa2 = document.getElementById("p2"); var pa3 = document.getElementById("p3");
- var co1 = document.getElementById("cop1"); var co2 = document.getElementById("cop2"); var co3 = document.getElementById("cop3");
 
-var altocaja = parseInt(window.innerWidth / 2.4)
-var altop = parseInt(altocaja / nfilas);
-altocaja = parseInt(altop * nfilas)
-var anchocaja = parseInt(window.innerWidth / (ncolumns + 2.1));
+
+ var mark = document.getElementById("marco") , blok = document.getElementById("bloke");
+
+ var pa1 = document.getElementById("p1") , pa2 = document.getElementById("p2"); var pa3 = document.getElementById("p3");
+ var co1 = document.getElementById("cop1") , co2 = document.getElementById("cop2"); var co3 = document.getElementById("cop3");
+
+
+ var altocaja  , altop , anchocaja 
+
 
 </script>
 </body>
