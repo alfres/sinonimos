@@ -163,8 +163,3 @@ function copy(o) {
    
    return output;
 }
-
-function addveces(item) {
-item.veces = 0	
-}
-

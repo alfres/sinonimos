@@ -21,7 +21,7 @@ createrejjilla()
 
 function fplay3(){
 copylistawords = copy(listawords);
-copylistawords.forEach(addveces)
+copylistawords.forEach(function(item){item.veces = 0	})
 nwords = ((ncolumns * 5) + ((nivel - 1) * 3))
 if (nwords > copylistawords.length ) { nwords = copylistawords.length}
 c.innerText = copylistawords.length
