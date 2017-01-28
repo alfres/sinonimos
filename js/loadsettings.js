@@ -49,7 +49,7 @@ divsettings.style.display = "block"
  divsettings.innerHTML += "<br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" 
  divsettings.innerHTML += "<button id='bsave' class='button' onclick='javascript:saveset(this);' style='font-size:100%; border-radius: 10%; width:12%; height:8%; display: inline; '>SAVE</button>"
  divsettings.innerHTML += "<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
- divsettings.innerHTML += "<a href='http://bluefish.openoffice.nl/'>Made with Bluefish HTML editor.</a>"
+ divsettings.innerHTML += "<a href='https://github.com/alfres/sinonimos'>code here</a>"
   document.body.appendChild(divsettings);
   divsettings.style.top = 0 + "px";
 divsettings.style.left = anchocaja + "px";
