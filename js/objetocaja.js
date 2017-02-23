@@ -31,6 +31,7 @@ case "num": caja.style.backgroundColor = "Cyan" ; break
 }
 
 function createrejjilla(){
+	var x , y
 subrejilla.length = 0
 rejilla.length = 0
     for (x = 0; x < ncolumns; x++) {
@@ -46,6 +47,7 @@ rejilla.length = 0
 
 function neworder() {
 	var ob1 = new Object(), ob2 = new Object(), ob3 = new Object()
+	var n1, nn1, n2, nn2, n3, nn3
 nn1 = Object.assign(ob1, p1);
 nn2 = Object.assign(ob2, p2);
 nn3 = Object.assign(ob3, p3);
@@ -74,7 +76,7 @@ function izquierda() {
 
 
 function newpalabro(){
-	
+	var person
 posblok()
 person = Object.assign(p1, cop1);
 person = Object.assign(p2, cop2);
@@ -131,7 +133,7 @@ caja.testo = caja.innerText
 
 
 function copiarbox(b1,b2) {
-	
+var person	
 b1.innerText = b2.innerText
 b1.setAttribute("class", "kaixa2");
 

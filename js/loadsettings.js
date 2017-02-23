@@ -1,7 +1,7 @@
  function loadlenguas(item,index,arr) {
 
- select = document.getElementById("L1");
- select2 = document.getElementById("L2");
+var  select = document.getElementById("L1");
+var select2 = document.getElementById("L2");
           var opt = document.createElement('option');
           var opt2 = document.createElement('option');
             opt.value = index;
@@ -15,7 +15,7 @@
 }  
    
   function loadgridsizes(item,index,arr) {
- select = document.getElementById("L3");
+ var select = document.getElementById("L3");
 
           var opt = document.createElement('option');
           opt.value = arr[index];
@@ -34,20 +34,20 @@ $("#bplai, #bset").each(function(){ this.style.visibility = "hidden"	})
 divsettings.setAttribute('id', 'marco2');
 divsettings.style.width = marco.style.width;
 divsettings.style.height = marco.style.height;
-divsettings.style.backgroundColor = "LemonChiffon"
+//divsettings.style.backgroundColor = "LemonChiffon"
 divsettings.style.zIndex = 5000
 divsettings.style.position = "absolute";
 divsettings.style.display = "block"
    
  divsettings.innerHTML =  "<br><br>&nbsp;&nbsp;&nbsp;&nbsp;"
- divsettings.innerHTML += "LANG 1 &nbsp;<select id='L1'> </select>"
- divsettings.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "
- divsettings.innerHTML += "LANG 2 &nbsp;<select id='L2'></select>"
+ divsettings.innerHTML += "LANG 1 &nbsp;<select id='L1' class='w3-select' style ='width:18%'> </select>"
+ divsettings.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "
+ divsettings.innerHTML += "LANG 2 &nbsp;<select id='L2' class='w3-select' style ='width:18%'></select>"
  divsettings.innerHTML += "<i class='fa fa-bullhorn' style='text-align:right;'></i>"
- divsettings.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "
- divsettings.innerHTML += "<i style='font-size:24px; color: rgb(190,160,160);' class='fa'>&#xf0ce;</i>&nbsp;&nbsp;<select id='L3'>"
+ divsettings.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "
+ divsettings.innerHTML += "<i style='font-size:24px; ' class='fa'>&#xf0ce;</i>&nbsp;&nbsp;<select id='L3' class='w3-select' style ='width:18%'>"
  divsettings.innerHTML += "<br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" 
- divsettings.innerHTML += "<button id='bsave' class='button' onclick='javascript:saveset(this);' style='font-size:100%; border-radius: 10%; width:12%; height:8%; display: inline; '>SAVE</button>"
+ divsettings.innerHTML += "<button id='bsave' class='w3-button w3-round-xlarge' onclick='javascript:saveset(this);' style='font-size:100%; border-radius: 10%; width:12%; height:8%; display: inline; '>SAVE</button>"
  divsettings.innerHTML += "<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
  divsettings.innerHTML += "<a href='https://github.com/alfres/sinonimos'>code here</a>"
   document.body.appendChild(divsettings);

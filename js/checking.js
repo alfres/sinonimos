@@ -1,6 +1,6 @@
 var checkingloaded = true; 
  function iguales(xx,yy,zz){
- 	var pala = ""
+ 	var pala = "", x, y, speaker
  cadenaeraser = ""
 removelist.length = 0
 removelist2.length = 0
@@ -33,7 +33,7 @@ cadenaeraser = cadenaeraser += "#" + rejilla[x][y].id + ","
 	
 }
 function txekear(){
-var z = false ; var x2 ; var y2 
+var z = false , x, y, x2 , y2 
   for (x = 0; x < (ncolumns - 1); x++ ) {
 	for (y = 0; y < (nfilas) ; y++) {
 
@@ -82,7 +82,7 @@ var z = false ; var x2 ; var y2
 }
 function borrarboxes() {
 	
-	s = false
+	var s = false
 	if (removelist.length > 0) {
 	s = true
 	clearTimeout(myVar);
@@ -102,7 +102,7 @@ puntos = puntos + 1
 copuntos.innerText = "POINTS: " + puntos	
  }
   function borrarboxes3(s) {
-  
+  var x 
  	if (s == true) {
  for (x = 0; x < removelist2.length; x += 2) {
 rejilla[removelist2[x]][removelist2[x+1]] = false
@@ -115,7 +115,7 @@ myVar2 = setTimeout(function (){txekear()},100)
  }
  function bajar(s) {
 	clearTimeout(myVar2);
-	
+	var x , y
 	for (y = (nfilas -2); y > -1; y--) {
 	  for (x = 0; x < ncolumns ; x++) {
 
@@ -166,7 +166,7 @@ pala = ""
 }
 
 function cantar2(pala,speaker) {
-	p = pala
+	var p = pala
 	if (p.slice(-1) == ")") {
 p = p.slice(0,(p.length - 4))
 }
@@ -182,7 +182,7 @@ if (arr[index].fam == myVar3) { copylistawords[index].veces = (copylistawords[in
 }
 
 function purgarlista() {
-	
+	var x
 	if (copylistawords.length > nwords) {
 		
 		for (x = copylistawords.length; x > 0; x--) {

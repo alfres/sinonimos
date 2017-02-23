@@ -14,7 +14,7 @@ if (typeof window.boxloaded == 'undefined') {
 }
 
 function fplay2(){
-pathlista = "listas/lpalabras" + nlista + ".js"
+var pathlista = "listas/lpalabras" + nlista + ".js"
 $.getScript(pathlista , function(){ fplay3()  })
 createrejjilla()
 }
@@ -35,5 +35,9 @@ newprew()
 newpalabro()	
 }
 
-function fsettings(){ $.getScript("js/loadsettings.js"); }
+function fsettings(){
+	var b = document.getElementById("marco");
+while (b.children.length > 1) { b.removeChild(b.lastChild);}
+posblok()
+	 $.getScript("js/loadsettings.js"); }
  

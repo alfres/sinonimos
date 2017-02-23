@@ -1,6 +1,7 @@
 function setcoki() {
   var expiration_date = new Date();
   expiration_date.setFullYear(expiration_date.getFullYear() + 1);
+  var cookie_string
 cookie_string = "mylevel=" + nivel + "; path=/ ; expires=" + expiration_date.toUTCString();
 document.cookie = cookie_string
 cookie_string = "le1=" + lenguas[0] + "; path=/ ; expires=" + expiration_date.toUTCString();
@@ -81,7 +82,7 @@ $(".kaixa").each(function(){ this.style.top = (altop * this.style.zIndex) + "px"
 cbarra.style.width = anchocaja + "px";
 cbarra.style.height = (altocaja / 2) + "px";
 cbarra.style.top = (altocaja / 3) + "px";
-cbarra.style.display = "table-row-group";
+//cbarra.style.display = "table-row-group";
 posblok()
 }
 
