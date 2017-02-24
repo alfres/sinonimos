@@ -81,3 +81,4 @@ izquierda()
 derecha()
 } else if (elCaracter2 > blok.v){abajo()} 
  }
+alert("down")
