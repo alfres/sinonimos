@@ -1,4 +1,5 @@
 var barbuttons = document.createElement('div');
+alert("down")
 barbuttons.setAttribute('id', 'c2');
 barbuttons.style.width = anchocaja + "px";
 barbuttons.style.height = altocaja + "px";
@@ -81,4 +82,4 @@ izquierda()
 derecha()
 } else if (elCaracter2 > blok.v){abajo()} 
  }
-alert("down")
+
