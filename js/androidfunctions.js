@@ -3,7 +3,7 @@ barbuttons.setAttribute('id', 'c2');
 barbuttons.style.width = anchocaja + "px";
 barbuttons.style.height = altocaja + "px";
 
-barbuttons.style.color = "white";
+barbuttons.style.color = "blue";
 barbuttons.style.position = "absolute";
 barbuttons.style.display = "block"
 
