@@ -1,0 +1,29 @@
+{
+  "name": "sinonimos",
+  "version": "0.2.0",
+  "description": "words tetris",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfres/sinonimos"
+  },
+  "keywords": [
+    "node",
+    "alfres",
+    "express"
+  ],
+  "author": "alfres",
+  "contributors": [
+    "alfres"
+  ],
+  "license": "alfres"
+}
