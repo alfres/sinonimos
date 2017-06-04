@@ -4,7 +4,7 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static('public'));
 
-app.get('/index.html', function(request, response) {
+app.get('/', function(request, response) {
   response.sendFile( __dirname + "/" + "index.htm" );
 })
 
