@@ -1,15 +1,11 @@
 function fplay(t){
 	t.blur()
-
 var b = document.getElementById("marco");
-
 while (b.children.length > 1) { b.removeChild(b.lastChild);}
-
 puntos = 0 ; plai = true ;
 listawords.length = 0
 copylistawords.length = 0
 pausa = ((480 + b.children.length * 2) - (nivel * 10))
-
 filltextboxs()
 $("#bplai, #bset").each(function(){ this.style.visibility = "hidden"	})
 if (typeof window.boxloaded == 'undefined') {
@@ -19,7 +15,6 @@ if (typeof window.boxloaded == 'undefined') {
 
 function fplay2(){
 var pathlista = "listas/lpalabras" + nlista + ".js"
-
 $.getScript(pathlista , function(){ fplay3()  })
 createrejjilla()
 }
@@ -33,18 +28,15 @@ c.innerText = copylistawords.length
 if (typeof window.checkingloaded == 'undefined') {
  $.getScript('js/checking.js',function(){ fplay4()  } ) 
   } else { fplay4()  }
-
 }
 
 function fplay4(){
 newprew()
-
 newpalabro()	
 }
 
 function fsettings(){
 	var b = document.getElementById("marco");
-
 while (b.children.length > 1) { b.removeChild(b.lastChild);}
 posblok()
 	 $.getScript("js/loadsettings.js"); }
